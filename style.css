@@ -1,0 +1,22 @@
+body{
+    display: flex;
+    /* to show the bars at the centre of screen */
+    align-items:center;   
+    /* to make sure items centre me toh rhe lekin alag alag columns me rhe */
+    flex-direction: column;
+}
+ /*since container me divs aa gai hai bars ki lekin container ka khud ka koi size nai hai, toh iski height and width dera  */
+#container{
+    height:200px;
+    /* height dedi lekin bars ek ke neeche ek aa rhe the, and we need ki bars aaju baaju aaye toh uske liye display flex */
+    display: flex;
+    /* to make the bars align at the bottom instead of the top */
+    align-items: flex-end;
+}
+
+/* bar ko differentiate karne ke liye usme css dalo */
+.bar{
+    width: 10px;
+    background-color: black;
+    margin: 1px;
+}
